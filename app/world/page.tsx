@@ -43,12 +43,15 @@ const sections = [
 ];
 
 export default function WorldPage() {
+  const { havens, settlements } = loreContent;
+
   return (
     <main>
       <Starfield />
       <Navigation />
 
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20">
+      {/* Hero */}
+      <section className="pt-32 pb-12 sm:pt-40 sm:pb-16">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0 }}
@@ -72,32 +75,124 @@ export default function WorldPage() {
         </div>
       </section>
 
+      {/* Haven quick-access grid */}
+      <section className="pb-16 sm:pb-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <FadeIn>
+            <div className="flex items-center justify-between mb-8">
+              <p className="font-mono text-[10px] tracking-[0.3em] text-nebula/40 uppercase">
+                Haven Registry
+              </p>
+              <Link
+                href="/world/havens"
+                className="font-mono text-[10px] tracking-[0.15em] text-starlight/20 hover:text-nebula/50 transition-colors uppercase"
+              >
+                View Full Profiles &rarr;
+              </Link>
+            </div>
+          </FadeIn>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            {havens.map((haven, index) => (
+              <FadeIn key={haven.id} delay={index * 0.03}>
+                <Link href="/world/havens" className="block group">
+                  <motion.div
+                    whileHover={{
+                      borderColor: 'rgba(59, 130, 246, 0.25)',
+                      backgroundColor: 'rgba(255, 255, 255, 0.02)',
+                    }}
+                    transition={{ duration: 0.2 }}
+                    className="p-4 border border-white/5 rounded-sm bg-white/[0.01] h-full"
+                  >
+                    <div className="flex items-baseline gap-2 mb-2">
+                      <span className="font-mono text-[9px] tracking-[0.15em] text-nebula/50">
+                        {haven.id}
+                      </span>
+                    </div>
+                    <p className="font-display text-sm font-light text-starlight/75 group-hover:text-starlight/90 transition-colors mb-1">
+                      {haven.name}
+                    </p>
+                    <p className="font-mono text-[8px] tracking-[0.1em] text-starlight/20 uppercase leading-tight">
+                      {haven.specialization}
+                    </p>
+                    <p className="font-body text-[10px] text-starlight/15 mt-2">
+                      {haven.location}
+                    </p>
+                  </motion.div>
+                </Link>
+              </FadeIn>
+            ))}
+            {/* Off-world cards */}
+            {settlements.locations.map((loc, index) => (
+              <FadeIn key={loc.designation} delay={(havens.length + index) * 0.03}>
+                <Link href="/world/settlements" className="block group">
+                  <motion.div
+                    whileHover={{
+                      borderColor: 'rgba(59, 130, 246, 0.25)',
+                      backgroundColor: 'rgba(255, 255, 255, 0.02)',
+                    }}
+                    transition={{ duration: 0.2 }}
+                    className="p-4 border border-white/5 border-l-2 border-l-nebula/10 rounded-sm bg-white/[0.01] h-full"
+                  >
+                    <div className="flex items-baseline gap-2 mb-2">
+                      <span className="font-mono text-[9px] tracking-[0.15em] text-nebula/50">
+                        {loc.designation}
+                      </span>
+                      <span className="font-mono text-[7px] tracking-[0.15em] text-amber-400/25 uppercase">
+                        Off-World
+                      </span>
+                    </div>
+                    <p className="font-display text-sm font-light text-starlight/75 group-hover:text-starlight/90 transition-colors mb-1">
+                      {loc.name}
+                    </p>
+                    <p className="font-mono text-[8px] tracking-[0.1em] text-starlight/20 uppercase leading-tight">
+                      {loc.body}
+                    </p>
+                  </motion.div>
+                </Link>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section divider */}
+      <FadeIn>
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="section-line mb-4" />
+          <p className="font-mono text-[10px] tracking-[0.3em] text-nebula/30 uppercase text-center mb-12">
+            Explore the Archive
+          </p>
+        </div>
+      </FadeIn>
+
+      {/* Section navigation links */}
       <section className="pb-32">
-        <div className="max-w-3xl mx-auto px-6 space-y-6">
+        <div className="max-w-3xl mx-auto px-6 space-y-4">
           {sections.map((section, index) => (
-            <FadeIn key={section.href} delay={index * 0.08}>
+            <FadeIn key={section.href} delay={index * 0.06}>
               <Link href={section.href} className="block group">
                 <motion.div
                   whileHover={{
-                    x: 8,
+                    x: 6,
                     borderColor: 'rgba(59, 130, 246, 0.3)',
                   }}
                   transition={{ duration: 0.3 }}
-                  className="relative p-6 sm:p-8 border border-white/5 rounded-sm bg-white/[0.01] hover:bg-white/[0.03] transition-all duration-500"
+                  className="relative p-5 sm:p-6 border border-white/5 rounded-sm bg-white/[0.01] hover:bg-white/[0.03] transition-all duration-500"
                 >
-                  <div className="flex items-start gap-6">
-                    <span className="font-mono text-[11px] text-nebula/40 tracking-[0.2em] pt-1 flex-shrink-0">
+                  <div className="flex items-center gap-5">
+                    <span className="font-mono text-[11px] text-nebula/40 tracking-[0.2em] flex-shrink-0">
                       {section.label}
                     </span>
-                    <div>
-                      <h2 className="font-display text-2xl font-light text-starlight/80 group-hover:text-starlight transition-colors duration-300 mb-2">
+                    <div className="flex-1 min-w-0">
+                      <h2 className="font-display text-xl sm:text-2xl font-light text-starlight/80 group-hover:text-starlight transition-colors duration-300 mb-1">
                         {section.title}
                       </h2>
-                      <p className="font-body text-sm text-starlight/30 leading-relaxed">
+                      <p className="font-body text-sm text-starlight/25 leading-relaxed">
                         {section.desc}
                       </p>
                     </div>
-                    <span className="font-mono text-starlight/15 group-hover:text-nebula/50 transition-colors ml-auto flex-shrink-0 pt-1">
+                    <span className="font-mono text-starlight/15 group-hover:text-nebula/50 transition-colors flex-shrink-0">
                       &rarr;
                     </span>
                   </div>
