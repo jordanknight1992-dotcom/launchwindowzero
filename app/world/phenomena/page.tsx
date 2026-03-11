@@ -11,7 +11,7 @@ export default function PhenomenaPage() {
   return (
     <LorePage label="Coalition Archive" title={phenomena.heading} lead={phenomena.lead}>
       <FadeIn>
-        <p className="font-body text-base sm:text-[17px] text-starlight/45 leading-[1.85] mt-12 mb-16">
+        <p className="font-body text-base sm:text-[17px] text-starlight/70 leading-[1.85] mt-12 mb-16">
           {phenomena.intro}
         </p>
       </FadeIn>
@@ -36,7 +36,7 @@ export default function PhenomenaPage() {
                   {entry.classification}
                 </p>
               )}
-              <p className="font-body text-sm sm:text-base text-starlight/35 leading-relaxed pl-8">
+              <p className="font-body text-sm sm:text-base text-starlight/62 leading-relaxed pl-8">
                 {entry.text}
               </p>
             </motion.div>

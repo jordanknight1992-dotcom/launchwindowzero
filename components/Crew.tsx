@@ -33,7 +33,7 @@ export default function Crew() {
               >
                 <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-nebula/0 group-hover:via-nebula/40 to-transparent transition-all duration-700" />
 
-                <p className="font-mono text-[10px] tracking-[0.2em] text-nebula/50 uppercase mb-4">
+                <p className="font-mono text-[10px] tracking-[0.2em] text-nebula/80 uppercase mb-4">
                   {member.role}
                 </p>
 
@@ -41,7 +41,7 @@ export default function Crew() {
                   {member.name}
                 </h3>
 
-                <p className="font-body text-sm text-starlight/35 leading-relaxed">
+                <p className="font-body text-sm text-starlight/62 leading-relaxed">
                   {member.description}
                 </p>
               </motion.div>

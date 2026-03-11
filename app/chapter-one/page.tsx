@@ -25,7 +25,7 @@ export default function ChapterOnePage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <p className="font-mono text-[11px] tracking-[0.3em] text-nebula/50 uppercase mb-4">
+            <p className="font-mono text-[11px] tracking-[0.3em] text-nebula/80 uppercase mb-4">
               Chapter {chapterOne.number}
             </p>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-wide text-starlight/90 mb-6">
@@ -58,7 +58,7 @@ export default function ChapterOnePage() {
               return (
                 <div
                   key={index}
-                  className="flex justify-center gap-3 my-12 text-starlight/15"
+                  className="flex justify-center gap-3 my-12 text-starlight/65"
                 >
                   <span>&#9679;</span>
                   <span>&#9679;</span>
@@ -89,7 +89,7 @@ export default function ChapterOnePage() {
 
           <div className="mt-20 text-center">
             <div className="section-line mb-8" />
-            <p className="font-mono text-[11px] tracking-[0.2em] text-starlight/20 uppercase mb-6">
+            <p className="font-mono text-[11px] tracking-[0.2em] text-starlight/70 uppercase mb-6">
               End of Chapter One
             </p>
             <Link

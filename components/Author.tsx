@@ -32,10 +32,10 @@ export default function Author() {
               <h2 className="font-display text-3xl sm:text-4xl font-light tracking-wide text-starlight/90 mb-2">
                 {author.name}
               </h2>
-              <p className="font-mono text-[10px] tracking-[0.2em] text-nebula/50 uppercase mb-6">
+              <p className="font-mono text-[10px] tracking-[0.2em] text-nebula/80 uppercase mb-6">
                 Author
               </p>
-              <p className="font-body text-base text-starlight/40 leading-relaxed max-w-lg">
+              <p className="font-body text-base text-starlight/65 leading-relaxed max-w-lg">
                 {author.bio}
               </p>
             </div>

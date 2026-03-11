@@ -26,7 +26,7 @@ export default function Signup() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <p className="font-body text-sm sm:text-base text-starlight/40 mb-10">
+          <p className="font-body text-sm sm:text-base text-starlight/65 mb-10">
             {signup.subheading}
           </p>
         </FadeIn>
@@ -41,7 +41,7 @@ export default function Signup() {
               <p className="font-display text-xl text-nebula-glow mb-2">
                 Transmission received.
               </p>
-              <p className="font-body text-sm text-starlight/40">
+              <p className="font-body text-sm text-starlight/65">
                 You will hear from us when the window opens.
               </p>
             </motion.div>
@@ -51,13 +51,13 @@ export default function Signup() {
                 type="text"
                 placeholder={signup.namePlaceholder}
                 required
-                className="w-full px-5 py-3.5 bg-white/[0.03] border border-white/10 rounded text-starlight/80 font-body text-sm tracking-wider placeholder:text-starlight/20 focus:outline-none focus:border-nebula/40 transition-colors duration-300"
+                className="w-full px-5 py-3.5 bg-white/[0.03] border border-white/10 rounded text-starlight/80 font-body text-sm tracking-wider placeholder:text-starlight/70 focus:outline-none focus:border-nebula/40 transition-colors duration-300"
               />
               <input
                 type="email"
                 placeholder={signup.emailPlaceholder}
                 required
-                className="w-full px-5 py-3.5 bg-white/[0.03] border border-white/10 rounded text-starlight/80 font-body text-sm tracking-wider placeholder:text-starlight/20 focus:outline-none focus:border-nebula/40 transition-colors duration-300"
+                className="w-full px-5 py-3.5 bg-white/[0.03] border border-white/10 rounded text-starlight/80 font-body text-sm tracking-wider placeholder:text-starlight/70 focus:outline-none focus:border-nebula/40 transition-colors duration-300"
               />
               <button
                 type="submit"

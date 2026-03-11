@@ -19,13 +19,13 @@ export default function ArchivePage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <p className="font-mono text-[11px] tracking-[0.3em] text-nebula/50 uppercase mb-4">
+            <p className="font-mono text-[11px] tracking-[0.3em] text-nebula/80 uppercase mb-4">
               Restricted Access
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-light tracking-wide text-starlight/90 mb-4">
               Archive
             </h1>
-            <p className="font-body text-sm text-starlight/30 mb-2">
+            <p className="font-body text-sm text-starlight/60 mb-2">
               Telemetry fragments and research logs recovered from Fold transit
               corridors.
             </p>
@@ -51,7 +51,7 @@ export default function ArchivePage() {
                 <span className="font-mono text-[10px] tracking-[0.15em] text-nebula/60">
                   {entry.id}
                 </span>
-                <span className="font-mono text-[10px] tracking-[0.15em] text-starlight/20">
+                <span className="font-mono text-[10px] tracking-[0.15em] text-starlight/70">
                   {entry.date}
                 </span>
                 <span
@@ -66,19 +66,19 @@ export default function ArchivePage() {
               </div>
 
               <div className="px-6 py-5">
-                <p className="font-mono text-[10px] tracking-[0.1em] text-starlight/20 mb-1">
+                <p className="font-mono text-[10px] tracking-[0.1em] text-starlight/70 mb-1">
                   Origin: {entry.origin}
                 </p>
                 <h3 className="font-display text-xl font-light text-starlight/80 mb-4">
                   {entry.title}
                 </h3>
-                <p className="font-body text-sm text-starlight/35 leading-relaxed">
+                <p className="font-body text-sm text-starlight/62 leading-relaxed">
                   {entry.content}
                 </p>
               </div>
 
               <div className="px-6 py-2 border-t border-white/5 bg-white/[0.005]">
-                <span className="font-mono text-[9px] tracking-[0.2em] text-starlight/15 uppercase">
+                <span className="font-mono text-[9px] tracking-[0.2em] text-starlight/65 uppercase">
                   Status: {entry.status}
                 </span>
               </div>
@@ -92,7 +92,7 @@ export default function ArchivePage() {
             transition={{ duration: 1, delay: 0.5 }}
             className="text-center py-12"
           >
-            <p className="font-mono text-[11px] text-nebula/30 tracking-wider">
+            <p className="font-mono text-[11px] text-nebula/65 tracking-wider">
               <span className="animate-pulse">_</span> Additional entries
               require Level Five clearance
             </p>

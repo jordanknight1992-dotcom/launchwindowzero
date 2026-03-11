@@ -56,7 +56,7 @@ export default function LorePage({
             <div className="flex items-center justify-between mb-8">
               <Link
                 href={backHref}
-                className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] text-starlight/20 hover:text-nebula/50 transition-colors uppercase"
+                className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] text-starlight/70 hover:text-nebula/80 transition-colors uppercase"
               >
                 &larr; {backLabel}
               </Link>
@@ -71,7 +71,7 @@ export default function LorePage({
                   className={`px-3 py-1.5 font-mono text-[9px] tracking-[0.15em] uppercase rounded-sm transition-all duration-200 ${
                     pathname === nav.href
                       ? 'text-nebula-glow/90 bg-nebula/10 border border-nebula/20'
-                      : 'text-starlight/25 hover:text-starlight/50 border border-transparent hover:border-white/5'
+                      : 'text-starlight/55 hover:text-starlight/72 border border-transparent hover:border-white/5'
                   }`}
                 >
                   {nav.label}
@@ -79,7 +79,7 @@ export default function LorePage({
               ))}
             </div>
 
-            <p className="font-mono text-[11px] tracking-[0.3em] text-nebula/50 uppercase mb-4">
+            <p className="font-mono text-[11px] tracking-[0.3em] text-nebula/80 uppercase mb-4">
               {label}
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-light tracking-wide text-starlight/90 mb-6">
@@ -87,7 +87,7 @@ export default function LorePage({
             </h1>
             <div className="section-line mb-8" />
             {lead && (
-              <p className="font-display text-xl sm:text-2xl font-light italic text-starlight/45 max-w-2xl">
+              <p className="font-display text-xl sm:text-2xl font-light italic text-starlight/70 max-w-2xl">
                 {lead}
               </p>
             )}
@@ -107,9 +107,9 @@ export default function LorePage({
               {prevSection ? (
                 <Link
                   href={prevSection.href}
-                  className="group inline-flex items-center gap-3 font-body text-sm text-starlight/30 hover:text-starlight/60 transition-colors"
+                  className="group inline-flex items-center gap-3 font-body text-sm text-starlight/60 hover:text-starlight/60 transition-colors"
                 >
-                  <span className="text-starlight/15 group-hover:text-nebula/50 transition-colors">
+                  <span className="text-starlight/65 group-hover:text-nebula/80 transition-colors">
                     &larr;
                   </span>
                   <span>{prevSection.label}</span>
@@ -120,10 +120,10 @@ export default function LorePage({
               {nextSection ? (
                 <Link
                   href={nextSection.href}
-                  className="group inline-flex items-center gap-3 font-body text-sm text-starlight/30 hover:text-starlight/60 transition-colors"
+                  className="group inline-flex items-center gap-3 font-body text-sm text-starlight/60 hover:text-starlight/60 transition-colors"
                 >
                   <span>{nextSection.label}</span>
-                  <span className="text-starlight/15 group-hover:text-nebula/50 transition-colors">
+                  <span className="text-starlight/65 group-hover:text-nebula/80 transition-colors">
                     &rarr;
                   </span>
                 </Link>
