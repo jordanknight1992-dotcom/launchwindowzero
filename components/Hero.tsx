@@ -67,7 +67,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="font-body text-base sm:text-lg text-starlight/45 max-w-2xl mx-auto leading-relaxed mb-12"
+          className="font-body text-base sm:text-lg text-starlight/70 max-w-2xl mx-auto leading-relaxed mb-12"
         >
           {hero.hook}
         </motion.p>

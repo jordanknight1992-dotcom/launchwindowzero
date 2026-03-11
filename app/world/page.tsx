@@ -58,14 +58,14 @@ export default function WorldPage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <p className="font-mono text-[11px] tracking-[0.3em] text-nebula/50 uppercase mb-4">
+            <p className="font-mono text-[11px] tracking-[0.3em] text-nebula/80 uppercase mb-4">
               Coalition Archive
             </p>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-wide text-starlight/90 mb-6">
               The Haven Network
             </h1>
             <div className="section-line mb-8" />
-            <p className="font-body text-base sm:text-lg text-starlight/40 leading-relaxed max-w-2xl mx-auto">
+            <p className="font-body text-base sm:text-lg text-starlight/65 leading-relaxed max-w-2xl mx-auto">
               A public archive documenting the survival and reconstruction of
               human civilization. Twelve sealed biospheres on Earth. Two
               settlements beyond. One species learning what it means to live
@@ -80,12 +80,12 @@ export default function WorldPage() {
         <div className="max-w-5xl mx-auto px-6">
           <FadeIn>
             <div className="flex items-center justify-between mb-8">
-              <p className="font-mono text-[10px] tracking-[0.3em] text-nebula/40 uppercase">
+              <p className="font-mono text-[10px] tracking-[0.3em] text-nebula/70 uppercase">
                 Haven Registry
               </p>
               <Link
                 href="/world/havens"
-                className="font-mono text-[10px] tracking-[0.15em] text-starlight/20 hover:text-nebula/50 transition-colors uppercase"
+                className="font-mono text-[10px] tracking-[0.15em] text-starlight/70 hover:text-nebula/80 transition-colors uppercase"
               >
                 View Full Profiles &rarr;
               </Link>
@@ -105,17 +105,17 @@ export default function WorldPage() {
                     className="p-4 border border-white/5 rounded-sm bg-white/[0.01] h-full"
                   >
                     <div className="flex items-baseline gap-2 mb-2">
-                      <span className="font-mono text-[9px] tracking-[0.15em] text-nebula/50">
+                      <span className="font-mono text-[9px] tracking-[0.15em] text-nebula/80">
                         {haven.id}
                       </span>
                     </div>
                     <p className="font-display text-sm font-light text-starlight/75 group-hover:text-starlight/90 transition-colors mb-1">
                       {haven.name}
                     </p>
-                    <p className="font-mono text-[8px] tracking-[0.1em] text-starlight/20 uppercase leading-tight">
+                    <p className="font-mono text-[8px] tracking-[0.1em] text-starlight/70 uppercase leading-tight">
                       {haven.specialization}
                     </p>
-                    <p className="font-body text-[10px] text-starlight/15 mt-2">
+                    <p className="font-body text-[10px] text-starlight/65 mt-2">
                       {haven.location}
                     </p>
                   </motion.div>
@@ -135,7 +135,7 @@ export default function WorldPage() {
                     className="p-4 border border-white/5 border-l-2 border-l-nebula/10 rounded-sm bg-white/[0.01] h-full"
                   >
                     <div className="flex items-baseline gap-2 mb-2">
-                      <span className="font-mono text-[9px] tracking-[0.15em] text-nebula/50">
+                      <span className="font-mono text-[9px] tracking-[0.15em] text-nebula/80">
                         {loc.designation}
                       </span>
                       <span className="font-mono text-[7px] tracking-[0.15em] text-amber-400/25 uppercase">
@@ -145,7 +145,7 @@ export default function WorldPage() {
                     <p className="font-display text-sm font-light text-starlight/75 group-hover:text-starlight/90 transition-colors mb-1">
                       {loc.name}
                     </p>
-                    <p className="font-mono text-[8px] tracking-[0.1em] text-starlight/20 uppercase leading-tight">
+                    <p className="font-mono text-[8px] tracking-[0.1em] text-starlight/70 uppercase leading-tight">
                       {loc.body}
                     </p>
                   </motion.div>
@@ -160,7 +160,7 @@ export default function WorldPage() {
       <FadeIn>
         <div className="max-w-3xl mx-auto px-6">
           <div className="section-line mb-4" />
-          <p className="font-mono text-[10px] tracking-[0.3em] text-nebula/30 uppercase text-center mb-12">
+          <p className="font-mono text-[10px] tracking-[0.3em] text-nebula/65 uppercase text-center mb-12">
             Explore the Archive
           </p>
         </div>
@@ -181,18 +181,18 @@ export default function WorldPage() {
                   className="relative p-5 sm:p-6 border border-white/5 rounded-sm bg-white/[0.01] hover:bg-white/[0.03] transition-all duration-500"
                 >
                   <div className="flex items-center gap-5">
-                    <span className="font-mono text-[11px] text-nebula/40 tracking-[0.2em] flex-shrink-0">
+                    <span className="font-mono text-[11px] text-nebula/70 tracking-[0.2em] flex-shrink-0">
                       {section.label}
                     </span>
                     <div className="flex-1 min-w-0">
                       <h2 className="font-display text-xl sm:text-2xl font-light text-starlight/80 group-hover:text-starlight transition-colors duration-300 mb-1">
                         {section.title}
                       </h2>
-                      <p className="font-body text-sm text-starlight/25 leading-relaxed">
+                      <p className="font-body text-sm text-starlight/55 leading-relaxed">
                         {section.desc}
                       </p>
                     </div>
-                    <span className="font-mono text-starlight/15 group-hover:text-nebula/50 transition-colors flex-shrink-0">
+                    <span className="font-mono text-starlight/65 group-hover:text-nebula/80 transition-colors flex-shrink-0">
                       &rarr;
                     </span>
                   </div>

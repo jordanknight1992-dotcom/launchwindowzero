@@ -30,14 +30,14 @@ export default function Universe() {
             >
               <div className="group">
                 <div className="flex items-baseline gap-4 mb-4">
-                  <span className="font-mono text-[10px] text-nebula/40 tracking-[0.3em]">
+                  <span className="font-mono text-[10px] text-nebula/70 tracking-[0.3em]">
                     {String(index + 1).padStart(2, '0')}
                   </span>
                   <h3 className="font-display text-2xl font-light text-starlight/80 group-hover:text-starlight transition-colors duration-500">
                     {concept.title}
                   </h3>
                 </div>
-                <p className="font-body text-sm sm:text-base text-starlight/35 leading-relaxed pl-10">
+                <p className="font-body text-sm sm:text-base text-starlight/62 leading-relaxed pl-10">
                   {concept.text}
                 </p>
               </div>

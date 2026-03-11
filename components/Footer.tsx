@@ -11,10 +11,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left">
-            <p className="font-display text-lg tracking-widest text-starlight/40 uppercase mb-1">
+            <p className="font-display text-lg tracking-widest text-starlight/65 uppercase mb-1">
               Launch Window Zero
             </p>
-            <p className="font-body text-xs text-starlight/20 italic">
+            <p className="font-body text-xs text-starlight/70 italic">
               {footer.tagline}
             </p>
           </div>
@@ -24,7 +24,7 @@ export default function Footer() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="font-body text-xs tracking-wider text-starlight/30 hover:text-starlight/60 transition-colors duration-300 uppercase"
+                className="font-body text-xs tracking-wider text-starlight/60 hover:text-starlight/60 transition-colors duration-300 uppercase"
               >
                 {link.label}
               </Link>
@@ -36,7 +36,7 @@ export default function Footer() {
               <a
                 key={icon}
                 href="#"
-                className="w-8 h-8 flex items-center justify-center border border-white/10 rounded-sm text-starlight/30 hover:text-nebula-glow hover:border-nebula/30 transition-all duration-300 font-mono text-[10px]"
+                className="w-8 h-8 flex items-center justify-center border border-white/10 rounded-sm text-starlight/60 hover:text-nebula-glow hover:border-nebula/30 transition-all duration-300 font-mono text-[10px]"
               >
                 {icon}
               </a>
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="font-body text-[11px] text-starlight/15">
+          <p className="font-body text-[11px] text-starlight/65">
             {footer.copyright}
           </p>
         </div>

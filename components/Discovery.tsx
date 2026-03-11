@@ -20,13 +20,13 @@ export default function Discovery() {
         </FadeIn>
 
         <FadeIn delay={0.2}>
-          <p className="font-display text-2xl sm:text-3xl font-light italic text-starlight/50 mb-8">
+          <p className="font-display text-2xl sm:text-3xl font-light italic text-starlight/72 mb-8">
             {discovery.lead}
           </p>
         </FadeIn>
 
         <FadeIn delay={0.3}>
-          <p className="font-body text-base sm:text-lg text-starlight/40 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-base sm:text-lg text-starlight/65 leading-relaxed max-w-2xl mx-auto">
             {discovery.body}
           </p>
         </FadeIn>

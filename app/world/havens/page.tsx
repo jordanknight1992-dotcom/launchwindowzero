@@ -12,7 +12,7 @@ export default function HavensPage() {
     <LorePage label="Coalition Archive" title={network.heading} lead={network.lead}>
       {/* Network intro */}
       <FadeIn>
-        <p className="font-body text-base sm:text-[17px] text-starlight/45 leading-[1.85] mt-12 mb-16">
+        <p className="font-body text-base sm:text-[17px] text-starlight/70 leading-[1.85] mt-12 mb-16">
           {network.intro}
         </p>
       </FadeIn>
@@ -25,7 +25,7 @@ export default function HavensPage() {
               <h3 className="font-display text-lg font-light text-starlight/70 mb-3">
                 {feature.title}
               </h3>
-              <p className="font-body text-sm text-starlight/30 leading-relaxed">
+              <p className="font-body text-sm text-starlight/60 leading-relaxed">
                 {feature.text}
               </p>
             </div>
@@ -37,7 +37,7 @@ export default function HavensPage() {
       <FadeIn>
         <div className="text-center mb-16">
           <div className="section-line mb-6" />
-          <p className="font-mono text-[10px] tracking-[0.3em] text-nebula/40 uppercase">
+          <p className="font-mono text-[10px] tracking-[0.3em] text-nebula/70 uppercase">
             Haven Registry
           </p>
         </div>
@@ -59,7 +59,7 @@ export default function HavensPage() {
                 <span className="font-display text-lg font-light text-starlight/80">
                   {haven.name}
                 </span>
-                <span className="font-mono text-[9px] tracking-[0.15em] text-starlight/20 ml-auto uppercase hidden sm:inline">
+                <span className="font-mono text-[9px] tracking-[0.15em] text-starlight/70 ml-auto uppercase hidden sm:inline">
                   {haven.specialization}
                 </span>
               </div>
@@ -69,59 +69,59 @@ export default function HavensPage() {
                 {/* Location and Population row */}
                 <div className="flex flex-wrap gap-x-8 gap-y-3">
                   <div>
-                    <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                    <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                       Location
                     </p>
-                    <p className="font-body text-sm text-starlight/50">
+                    <p className="font-body text-sm text-starlight/72">
                       {haven.location}
                     </p>
                   </div>
                   <div>
-                    <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                    <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                       Population
                     </p>
-                    <p className="font-body text-sm text-starlight/50">
+                    <p className="font-body text-sm text-starlight/72">
                       {haven.population}
                     </p>
                   </div>
                   <div className="sm:hidden">
-                    <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                    <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                       Specialization
                     </p>
-                    <p className="font-body text-sm text-starlight/50">
+                    <p className="font-body text-sm text-starlight/72">
                       {haven.specialization}
                     </p>
                   </div>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                     Primary Function
                   </p>
-                  <p className="font-body text-sm text-starlight/40 leading-relaxed">
+                  <p className="font-body text-sm text-starlight/65 leading-relaxed">
                     {haven.function}
                   </p>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                     Architecture
                   </p>
-                  <p className="font-body text-sm text-starlight/40 leading-relaxed">
+                  <p className="font-body text-sm text-starlight/65 leading-relaxed">
                     {haven.visual}
                   </p>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                     Cultural Identity
                   </p>
-                  <p className="font-body text-sm text-starlight/40 leading-relaxed">
+                  <p className="font-body text-sm text-starlight/65 leading-relaxed">
                     {haven.culture}
                   </p>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                     Environmental Design
                   </p>
-                  <p className="font-body text-sm text-starlight/35 leading-relaxed italic">
+                  <p className="font-body text-sm text-starlight/62 leading-relaxed italic">
                     {haven.environment}
                   </p>
                 </div>

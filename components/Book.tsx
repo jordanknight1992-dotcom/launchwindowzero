@@ -21,7 +21,7 @@ export default function Book() {
         </FadeIn>
 
         <FadeIn delay={0.2}>
-          <p className="font-body text-base sm:text-lg text-starlight/40 leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="font-body text-base sm:text-lg text-starlight/65 leading-relaxed mb-8 max-w-2xl mx-auto">
             {book.description}
           </p>
         </FadeIn>
@@ -36,7 +36,7 @@ export default function Book() {
         </FadeIn>
 
         <FadeIn delay={0.4}>
-          <p className="font-body text-sm text-starlight/30 mb-8">
+          <p className="font-body text-sm text-starlight/60 mb-8">
             {book.statusDetail}
           </p>
           <Link

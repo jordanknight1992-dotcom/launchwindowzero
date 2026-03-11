@@ -89,7 +89,7 @@ export default function Navigation() {
                   className={`font-body text-sm tracking-wider transition-colors duration-300 inline-flex items-center gap-1.5 ${
                     isWorldActive
                       ? 'text-nebula-glow/80'
-                      : 'text-starlight/50 hover:text-nebula-glow'
+                      : 'text-starlight/72 hover:text-nebula-glow'
                   }`}
                 >
                   {link.label}
@@ -118,7 +118,7 @@ export default function Navigation() {
                       <div className="py-2">
                         <Link
                           href="/world"
-                          className="block px-5 py-2 font-mono text-[9px] tracking-[0.2em] text-nebula/40 uppercase hover:text-nebula/70 transition-colors"
+                          className="block px-5 py-2 font-mono text-[9px] tracking-[0.2em] text-nebula/70 uppercase hover:text-nebula/70 transition-colors"
                         >
                           Archive Index
                         </Link>
@@ -130,7 +130,7 @@ export default function Navigation() {
                             className={`block px-5 py-2.5 font-body text-sm tracking-wider transition-all duration-200 ${
                               pathname === sub.href
                                 ? 'text-nebula-glow/90 bg-nebula/5'
-                                : 'text-starlight/45 hover:text-starlight/80 hover:bg-white/[0.03]'
+                                : 'text-starlight/70 hover:text-starlight/80 hover:bg-white/[0.03]'
                             }`}
                           >
                             {sub.label}
@@ -145,7 +145,7 @@ export default function Navigation() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="font-body text-sm tracking-wider text-starlight/50 hover:text-nebula-glow transition-colors duration-300"
+                className="font-body text-sm tracking-wider text-starlight/72 hover:text-nebula-glow transition-colors duration-300"
               >
                 {link.label}
               </Link>
@@ -227,7 +227,7 @@ export default function Navigation() {
                           <Link
                             href="/world"
                             onClick={() => setMenuOpen(false)}
-                            className="block pl-5 py-2 font-mono text-[9px] tracking-[0.2em] text-nebula/40 uppercase"
+                            className="block pl-5 py-2 font-mono text-[9px] tracking-[0.2em] text-nebula/70 uppercase"
                           >
                             Archive Index
                           </Link>
@@ -239,7 +239,7 @@ export default function Navigation() {
                               className={`block pl-5 py-2.5 font-body text-sm tracking-wider transition-colors ${
                                 pathname === sub.href
                                   ? 'text-nebula-glow/90'
-                                  : 'text-starlight/40 hover:text-starlight/70'
+                                  : 'text-starlight/65 hover:text-starlight/70'
                               }`}
                             >
                               {sub.label}

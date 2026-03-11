@@ -18,7 +18,7 @@ export default function CollapsePage() {
                   {section.heading}
                 </h3>
               )}
-              <p className="font-body text-base sm:text-[17px] text-starlight/45 leading-[1.85]">
+              <p className="font-body text-base sm:text-[17px] text-starlight/70 leading-[1.85]">
                 {section.text}
               </p>
             </div>

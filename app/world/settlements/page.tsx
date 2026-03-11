@@ -11,13 +11,13 @@ export default function SettlementsPage() {
   return (
     <LorePage label="Coalition Archive" title={settlements.heading} lead={settlements.lead}>
       <FadeIn>
-        <p className="font-body text-base sm:text-[17px] text-starlight/45 leading-[1.85] mt-12 mb-10">
+        <p className="font-body text-base sm:text-[17px] text-starlight/70 leading-[1.85] mt-12 mb-10">
           {settlements.intro}
         </p>
       </FadeIn>
 
       <FadeIn delay={0.1}>
-        <p className="font-body text-base sm:text-[17px] text-starlight/40 leading-[1.85] mb-16">
+        <p className="font-body text-base sm:text-[17px] text-starlight/65 leading-[1.85] mb-16">
           {settlements.significance}
         </p>
       </FadeIn>
@@ -36,49 +36,49 @@ export default function SettlementsPage() {
                 <span className="font-display text-lg font-light text-starlight/80">
                   {loc.name}
                 </span>
-                <span className="font-mono text-[9px] tracking-[0.15em] text-starlight/20 ml-auto uppercase">
+                <span className="font-mono text-[9px] tracking-[0.15em] text-starlight/70 ml-auto uppercase">
                   {loc.body} — Off-World Biome
                 </span>
               </div>
 
               <div className="px-6 py-5 space-y-4">
                 <div>
-                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                     Population
                   </p>
-                  <p className="font-body text-sm text-starlight/50">
+                  <p className="font-body text-sm text-starlight/72">
                     {loc.population}
                   </p>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                     Function
                   </p>
-                  <p className="font-body text-sm text-starlight/40 leading-relaxed">
+                  <p className="font-body text-sm text-starlight/65 leading-relaxed">
                     {loc.function}
                   </p>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                     Architecture
                   </p>
-                  <p className="font-body text-sm text-starlight/40 leading-relaxed">
+                  <p className="font-body text-sm text-starlight/65 leading-relaxed">
                     {loc.visual}
                   </p>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                     Culture
                   </p>
-                  <p className="font-body text-sm text-starlight/40 leading-relaxed">
+                  <p className="font-body text-sm text-starlight/65 leading-relaxed">
                     {loc.culture}
                   </p>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/65 uppercase mb-1">
                     Identity
                   </p>
-                  <p className="font-body text-sm text-starlight/35 leading-relaxed italic">
+                  <p className="font-body text-sm text-starlight/62 leading-relaxed italic">
                     {loc.identity}
                   </p>
                 </div>
