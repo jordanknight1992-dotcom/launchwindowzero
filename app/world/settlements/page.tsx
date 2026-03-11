@@ -11,8 +11,14 @@ export default function SettlementsPage() {
   return (
     <LorePage label="Coalition Archive" title={settlements.heading} lead={settlements.lead}>
       <FadeIn>
-        <p className="font-body text-base sm:text-[17px] text-starlight/45 leading-[1.85] mt-12 mb-16">
+        <p className="font-body text-base sm:text-[17px] text-starlight/45 leading-[1.85] mt-12 mb-10">
           {settlements.intro}
+        </p>
+      </FadeIn>
+
+      <FadeIn delay={0.1}>
+        <p className="font-body text-base sm:text-[17px] text-starlight/40 leading-[1.85] mb-16">
+          {settlements.significance}
         </p>
       </FadeIn>
 
@@ -25,17 +31,25 @@ export default function SettlementsPage() {
             >
               <div className="flex items-center gap-4 px-6 py-3 border-b border-white/5 bg-white/[0.01]">
                 <span className="font-mono text-[10px] tracking-[0.15em] text-nebula/60">
-                  {loc.body}
+                  {loc.designation}
                 </span>
                 <span className="font-display text-lg font-light text-starlight/80">
                   {loc.name}
                 </span>
                 <span className="font-mono text-[9px] tracking-[0.15em] text-starlight/20 ml-auto uppercase">
-                  Off-World Biome
+                  {loc.body} — Off-World Biome
                 </span>
               </div>
 
               <div className="px-6 py-5 space-y-4">
+                <div>
+                  <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                    Population
+                  </p>
+                  <p className="font-body text-sm text-starlight/50">
+                    {loc.population}
+                  </p>
+                </div>
                 <div>
                   <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
                     Function

@@ -10,9 +10,25 @@ export default function CoalitionPage() {
   return (
     <LorePage label="Coalition Archive" title={coalition.heading} lead={coalition.lead}>
       <FadeIn>
-        <p className="font-body text-base sm:text-[17px] text-starlight/45 leading-[1.85] mt-12 mb-16">
+        <p className="font-body text-base sm:text-[17px] text-starlight/45 leading-[1.85] mt-12 mb-10">
           {coalition.intro}
         </p>
+      </FadeIn>
+
+      <FadeIn delay={0.1}>
+        <p className="font-body text-base sm:text-[17px] text-starlight/40 leading-[1.85] mb-16">
+          {coalition.structure}
+        </p>
+      </FadeIn>
+
+      {/* Section divider */}
+      <FadeIn delay={0.15}>
+        <div className="text-center mb-12">
+          <div className="section-line mb-6" />
+          <p className="font-mono text-[10px] tracking-[0.3em] text-nebula/40 uppercase">
+            Structural Pillars
+          </p>
+        </div>
       </FadeIn>
 
       <div className="space-y-8">

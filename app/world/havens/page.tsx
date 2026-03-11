@@ -45,7 +45,7 @@ export default function HavensPage() {
 
       {/* Individual Haven profiles */}
       <div className="space-y-10">
-        {havens.map((haven, index) => (
+        {havens.map((haven) => (
           <FadeIn key={haven.id} delay={0.05}>
             <motion.div
               whileHover={{ borderColor: 'rgba(59, 130, 246, 0.2)' }}
@@ -59,13 +59,40 @@ export default function HavensPage() {
                 <span className="font-display text-lg font-light text-starlight/80">
                   {haven.name}
                 </span>
-                <span className="font-mono text-[9px] tracking-[0.15em] text-starlight/20 ml-auto uppercase">
+                <span className="font-mono text-[9px] tracking-[0.15em] text-starlight/20 ml-auto uppercase hidden sm:inline">
                   {haven.specialization}
                 </span>
               </div>
 
               {/* Body */}
               <div className="px-6 py-5 space-y-4">
+                {/* Location and Population row */}
+                <div className="flex flex-wrap gap-x-8 gap-y-3">
+                  <div>
+                    <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                      Location
+                    </p>
+                    <p className="font-body text-sm text-starlight/50">
+                      {haven.location}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                      Population
+                    </p>
+                    <p className="font-body text-sm text-starlight/50">
+                      {haven.population}
+                    </p>
+                  </div>
+                  <div className="sm:hidden">
+                    <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
+                      Specialization
+                    </p>
+                    <p className="font-body text-sm text-starlight/50">
+                      {haven.specialization}
+                    </p>
+                  </div>
+                </div>
                 <div>
                   <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
                     Primary Function
@@ -84,7 +111,7 @@ export default function HavensPage() {
                 </div>
                 <div>
                   <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
-                    Culture
+                    Cultural Identity
                   </p>
                   <p className="font-body text-sm text-starlight/40 leading-relaxed">
                     {haven.culture}
@@ -92,7 +119,7 @@ export default function HavensPage() {
                 </div>
                 <div>
                   <p className="font-mono text-[9px] tracking-[0.15em] text-nebula/30 uppercase mb-1">
-                    Environment
+                    Environmental Design
                   </p>
                   <p className="font-body text-sm text-starlight/35 leading-relaxed italic">
                     {haven.environment}
