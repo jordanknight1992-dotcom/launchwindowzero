@@ -23,7 +23,7 @@ export default function PhenomenaPage() {
               whileHover={{ borderColor: 'rgba(59, 130, 246, 0.15)' }}
               className="p-6 sm:p-8 border border-white/5 rounded-sm bg-white/[0.01] transition-all duration-500"
             >
-              <div className="flex items-baseline gap-3 mb-4">
+              <div className="flex items-baseline gap-3 mb-2">
                 <span className="font-mono text-[10px] text-amber-400/40 tracking-[0.2em]">
                   {String(index + 1).padStart(2, '0')}
                 </span>
@@ -31,6 +31,11 @@ export default function PhenomenaPage() {
                   {entry.title}
                 </h3>
               </div>
+              {entry.classification && (
+                <p className="font-mono text-[9px] tracking-[0.15em] text-amber-400/25 uppercase mb-4 pl-8">
+                  {entry.classification}
+                </p>
+              )}
               <p className="font-body text-sm sm:text-base text-starlight/35 leading-relaxed pl-8">
                 {entry.text}
               </p>
